@@ -1,0 +1,155 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "id_simulacao_crediario",
+        "condicoes_contratacao"
+      ],
+      "properties": {
+        "id_simulacao_crediario": {
+          "$id": "#/properties/data/properties/id_simulacao_crediario",
+          "type": "string",
+          "title": "The Id_simulacao_crediario Schema",
+          "default": "",
+          "examples": [
+            "045825f5-33be-41aa-80f5-78f4abd97481"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "condicoes_contratacao": {
+          "$id": "#/properties/data/properties/condicoes_contratacao",
+          "type": "object",
+          "title": "The Condicoes_contratacao Schema",
+          "required": [
+            "valor_minimo_disponivel",
+            "valor_maximo_disponivel",
+            "quantidade_minima_parcela",
+            "quantidade_maxima_parcela",
+            "valor_minimo_parcela",
+            "valor_maximo_parcela",
+            "data_minima_vencimento",
+            "data_maxima_vencimento",
+            "data_sugerida_primeiro_vencimento",
+            "taxa_minima_juros",
+            "taxa_maxima_juros"
+          ],
+          "properties": {
+            "valor_minimo_disponivel": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/valor_minimo_disponivel",
+              "type": "number",
+              "title": "The Valor_minimo_disponivel Schema",
+              "default": 0.0,
+              "examples": [
+                1200.99
+              ]
+            },
+            "valor_maximo_disponivel": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/valor_maximo_disponivel",
+              "type": "number",
+              "title": "The Valor_maximo_disponivel Schema",
+              "default": 0.0,
+              "examples": [
+                15000.99
+              ]
+            },
+            "quantidade_minima_parcela": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/quantidade_minima_parcela",
+              "type": "integer",
+              "title": "The Quantidade_minima_parcela Schema",
+              "default": 0,
+              "examples": [
+                5
+              ]
+            },
+            "quantidade_maxima_parcela": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/quantidade_maxima_parcela",
+              "type": "integer",
+              "title": "The Quantidade_maxima_parcela Schema",
+              "default": 0,
+              "examples": [
+                80
+              ]
+            },
+            "valor_minimo_parcela": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/valor_minimo_parcela",
+              "type": "number",
+              "title": "The Valor_minimo_parcela Schema",
+              "default": 0.0,
+              "examples": [
+                80.99
+              ]
+            },
+            "valor_maximo_parcela": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/valor_maximo_parcela",
+              "type": "number",
+              "title": "The Valor_maximo_parcela Schema",
+              "default": 0.0,
+              "examples": [
+                1000.99
+              ]
+            },
+            "data_minima_vencimento": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/data_minima_vencimento",
+              "type": "string",
+              "title": "The Data_minima_vencimento Schema",
+              "default": "",
+              "examples": [
+                "2019-08-01"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "data_maxima_vencimento": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/data_maxima_vencimento",
+              "type": "string",
+              "title": "The Data_maxima_vencimento Schema",
+              "default": "",
+              "examples": [
+                "2019-09-01"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "data_sugerida_primeiro_vencimento": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/data_sugerida_primeiro_vencimento",
+              "type": "string",
+              "title": "The Data_sugerida_primeiro_vencimento Schema",
+              "default": "",
+              "examples": [
+                "2019-08-10"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "taxa_minima_juros": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/taxa_minima_juros",
+              "type": "number",
+              "title": "The Taxa_minima_juros Schema",
+              "default": 0.0,
+              "examples": [
+                2.95
+              ]
+            },
+            "taxa_maxima_juros": {
+              "$id": "#/properties/data/properties/condicoes_contratacao/properties/taxa_maxima_juros",
+              "type": "number",
+              "title": "The Taxa_maxima_juros Schema",
+              "default": 0.0,
+              "examples": [
+                7.95
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

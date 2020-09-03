@@ -1,0 +1,88 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "id_simulacao_crediario",
+        "planos_parcelamento"
+      ],
+      "properties": {
+        "id_simulacao_crediario": {
+          "$id": "#/properties/data/properties/id_simulacao_crediario",
+          "type": "string",
+          "title": "The Id_simulacao_crediario Schema",
+          "default": "",
+          "examples": [
+            "045825f5-33be-41aa-80f5-78f4abd97481"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "planos_parcelamento": {
+          "$id": "#/properties/data/properties/planos_parcelamento",
+          "type": "array",
+          "title": "The Planos_parcelamento Schema",
+          "items": {
+            "$id": "#/properties/data/properties/planos_parcelamento/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "id_plano_parcelamento",
+              "quantidade_parcelas",
+              "valor_parcela",
+              "percentual_taxa_juros_mensal"
+            ],
+            "properties": {
+              "id_plano_parcelamento": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/id_plano_parcelamento",
+                "type": "string",
+                "title": "The Id_plano_parcelamento Schema",
+                "default": "",
+                "examples": [
+                  "232382e6-0573-495f-b69e-4ad24ebb46af"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "quantidade_parcelas": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/quantidade_parcelas",
+                "type": "integer",
+                "title": "The Quantidade_parcelas Schema",
+                "default": 0,
+                "examples": [
+                  10
+                ]
+              },
+              "valor_parcela": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/valor_parcela",
+                "type": "number",
+                "title": "The Valor_parcela Schema",
+                "default": 0.0,
+                "examples": [
+                  1200.99
+                ]
+              },
+              "percentual_taxa_juros_mensal": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/percentual_taxa_juros_mensal",
+                "type": "number",
+                "title": "The Percentual_taxa_juros_mensal Schema",
+                "default": 0.0,
+                "examples": [
+                  7.95
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

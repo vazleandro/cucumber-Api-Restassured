@@ -1,0 +1,33 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "array",
+   "title": "The Root Schema",
+   "required": [
+     "codigo",
+     "mensagem"
+   ],
+   "properties": {
+     "codigo": {
+       "$id": "#/properties/codigo",
+       "type": "string",
+       "title": "The Codigo Schema",
+       "default": "",
+       "examples": [
+         "E403_01"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "mensagem": {
+       "$id": "#/properties/mensagem",
+       "type": "string",
+       "title": "The Mensagem Schema",
+       "default": "",
+       "examples": [
+         "Acesso não autorizado"
+       ],
+       "pattern": "^(.*)$"
+     }
+   }
+ }

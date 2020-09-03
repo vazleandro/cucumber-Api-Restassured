@@ -1,0 +1,38 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "codigo",
+      "mensagem"
+    ],
+    "properties": {
+      "codigo": {
+        "$id": "#/items/properties/codigo",
+        "type": "string",
+        "title": "The Codigo Schema",
+        "default": "",
+        "examples": [
+          "404"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "mensagem": {
+        "$id": "#/items/properties/mensagem",
+        "type": "string",
+        "title": "The Mensagem Schema",
+        "default": "",
+        "examples": [
+          "Simulação não encontrada"
+        ],
+        "pattern": "^(.*)$"
+      }
+    }
+  }
+}

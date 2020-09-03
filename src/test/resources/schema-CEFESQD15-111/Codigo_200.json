@@ -1,0 +1,267 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "data"
+    ],
+    "properties": {
+      "data": {
+        "$id": "#/properties/data",
+        "type": "object",
+        "title": "The Data Schema",
+        "required": [
+          "id_proposta_crediario",
+          "codigo_situacao_negociacao",
+          "data_hora_efetivacao",
+          "valor_solicitado",
+          "percentual_valor_solicitado_financiado",
+          "valor_iof",
+          "percentual_valor_iof_financiado",
+          "valor_total_proposta",
+          "percentual_valor_total_financiado",
+          "periodo_capitalizacao",
+          "precificacao",
+          "parcelamento",
+          "id_operacao_crediario",
+          "codigo_autenticacao_comprovante"
+        ],
+        "properties": {
+          "id_proposta_crediario": {
+            "$id": "#/properties/data/properties/id_proposta_crediario",
+            "type": "string",
+            "title": "The Id_proposta_crediario Schema",
+            "default": "",
+            "examples": [
+              "045825f5-33be-41aa-80f5-78f4abd97481"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "codigo_situacao_negociacao": {
+            "$id": "#/properties/data/properties/codigo_situacao_negociacao",
+            "type": "integer",
+            "title": "The Codigo_situacao_negociacao Schema",
+            "default": 0,
+            "examples": [
+              3
+            ]
+          },
+          "data_hora_efetivacao": {
+            "$id": "#/properties/data/properties/data_hora_efetivacao",
+            "type": "string",
+            "title": "The Data_hora_efetivacao Schema",
+            "default": "",
+            "examples": [
+              "2020-02-04 23:59:59"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "valor_solicitado": {
+            "$id": "#/properties/data/properties/valor_solicitado",
+            "type": "number",
+            "title": "The Valor_solicitado Schema",
+            "default": 0.0,
+            "examples": [
+              81.99
+            ]
+          },
+          "percentual_valor_solicitado_financiado": {
+            "$id": "#/properties/data/properties/percentual_valor_solicitado_financiado",
+            "type": "number",
+            "title": "The Percentual_valor_solicitado_financiado Schema",
+            "default": 0.0,
+            "examples": [
+              99.29
+            ]
+          },
+          "valor_iof": {
+            "$id": "#/properties/data/properties/valor_iof",
+            "type": "number",
+            "title": "The Valor_iof Schema",
+            "default": 0.0,
+            "examples": [
+              200.62
+            ]
+          },
+          "percentual_valor_iof_financiado": {
+            "$id": "#/properties/data/properties/percentual_valor_iof_financiado",
+            "type": "number",
+            "title": "The Percentual_valor_iof_financiado Schema",
+            "default": 0.0,
+            "examples": [
+              0.89
+            ]
+          },
+          "valor_total_proposta": {
+            "$id": "#/properties/data/properties/valor_total_proposta",
+            "type": "number",
+            "title": "The Valor_total_proposta Schema",
+            "default": 0.0,
+            "examples": [
+              81.62
+            ]
+          },
+          "percentual_valor_total_financiado": {
+            "$id": "#/properties/data/properties/percentual_valor_total_financiado",
+            "type": "number",
+            "title": "The Percentual_valor_total_financiado Schema",
+            "default": 0.0,
+            "examples": [
+              100.99
+            ]
+          },
+          "periodo_capitalizacao": {
+            "$id": "#/properties/data/properties/periodo_capitalizacao",
+            "type": "string",
+            "title": "The Periodo_capitalizacao Schema",
+            "default": "",
+            "examples": [
+              "M"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "precificacao": {
+            "$id": "#/properties/data/properties/precificacao",
+            "type": "object",
+            "title": "The Precificacao Schema",
+            "required": [
+              "percentual_taxa_juros_mensal",
+              "percentual_taxa_juros_anual",
+              "percentual_taxa_juro_mora",
+              "percentual_taxa_multa_atraso",
+              "percentual_cet_mensal",
+              "percentual_cet_anual"
+            ],
+            "properties": {
+              "percentual_taxa_juros_mensal": {
+                "$id": "#/properties/data/properties/precificacao/properties/percentual_taxa_juros_mensal",
+                "type": "number",
+                "title": "The Percentual_taxa_juros_mensal Schema",
+                "default": 0.0,
+                "examples": [
+                  1.99
+                ]
+              },
+              "percentual_taxa_juros_anual": {
+                "$id": "#/properties/data/properties/precificacao/properties/percentual_taxa_juros_anual",
+                "type": "number",
+                "title": "The Percentual_taxa_juros_anual Schema",
+                "default": 0.0,
+                "examples": [
+                  2.89
+                ]
+              },
+              "percentual_taxa_juro_mora": {
+                "$id": "#/properties/data/properties/precificacao/properties/percentual_taxa_juro_mora",
+                "type": "number",
+                "title": "The Percentual_taxa_juro_mora Schema",
+                "default": 0.0,
+                "examples": [
+                  2.99
+                ]
+              },
+              "percentual_taxa_multa_atraso": {
+                "$id": "#/properties/data/properties/precificacao/properties/percentual_taxa_multa_atraso",
+                "type": "number",
+                "title": "The Percentual_taxa_multa_atraso Schema",
+                "default": 0.0,
+                "examples": [
+                  2.99
+                ]
+              },
+              "percentual_cet_mensal": {
+                "$id": "#/properties/data/properties/precificacao/properties/percentual_cet_mensal",
+                "type": "number",
+                "title": "The Percentual_cet_mensal Schema",
+                "default": 0.0,
+                "examples": [
+                  2.99
+                ]
+              },
+              "percentual_cet_anual": {
+                "$id": "#/properties/data/properties/precificacao/properties/percentual_cet_anual",
+                "type": "number",
+                "title": "The Percentual_cet_anual Schema",
+                "default": 0.0,
+                "examples": [
+                  30.99
+                ]
+              }
+            }
+          },
+          "parcelamento": {
+            "$id": "#/properties/data/properties/parcelamento",
+            "type": "object",
+            "title": "The Parcelamento Schema",
+            "required": [
+              "quantidade_parcelas",
+              "valor_parcela",
+              "data_vencimento_primeira_parcela",
+              "data_vencimento_ultima_parcela"
+            ],
+            "properties": {
+              "quantidade_parcelas": {
+                "$id": "#/properties/data/properties/parcelamento/properties/quantidade_parcelas",
+                "type": "integer",
+                "title": "The Quantidade_parcelas Schema",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              },
+              "valor_parcela": {
+                "$id": "#/properties/data/properties/parcelamento/properties/valor_parcela",
+                "type": "number",
+                "title": "The Valor_parcela Schema",
+                "default": 0.0,
+                "examples": [
+                  40.81
+                ]
+              },
+              "data_vencimento_primeira_parcela": {
+                "$id": "#/properties/data/properties/parcelamento/properties/data_vencimento_primeira_parcela",
+                "type": "string",
+                "title": "The Data_vencimento_primeira_parcela Schema",
+                "default": "",
+                "examples": [
+                  "2020-08-10"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "data_vencimento_ultima_parcela": {
+                "$id": "#/properties/data/properties/parcelamento/properties/data_vencimento_ultima_parcela",
+                "type": "string",
+                "title": "The Data_vencimento_ultima_parcela Schema",
+                "default": "",
+                "examples": [
+                  "2021-08-10"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "id_operacao_crediario": {
+            "$id": "#/properties/data/properties/id_operacao_crediario",
+            "type": "integer",
+            "title": "The Id_operacao_crediario Schema",
+            "default": 0,
+            "examples": [
+              999999999999999
+            ]
+          },
+          "codigo_autenticacao_comprovante": {
+            "$id": "#/properties/data/properties/codigo_autenticacao_comprovante",
+            "type": "string",
+            "title": "The Codigo_autenticacao_comprovante Schema",
+            "default": "",
+            "examples": [
+              "544364CA1DC5689A1B32EDBAD1CB3A0FE5C27249"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }

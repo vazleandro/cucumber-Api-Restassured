@@ -1,0 +1,222 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "data"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The Data Schema",
+      "required": [
+        "id_simulacao_crediario",
+        "data_simulacao",
+        "hora_simulacao",
+        "valor_simulado",
+        "id_tipo_valor_simulado",
+        "data_primeiro_vencimento",
+        "data_ultimo_vencimento",
+        "dia_vencimento",
+        "percentual_encargos_atraso",
+        "percentual_multa_atraso",
+        "percentual_cet_mensal",
+        "percentual_cet_anual",
+        "planos_parcelamento"
+      ],
+      "properties": {
+        "id_simulacao_crediario": {
+          "$id": "#/properties/data/properties/id_simulacao_crediario",
+          "type": "string",
+          "title": "The Id_simulacao_crediario Schema",
+          "default": "",
+          "examples": [
+            "045825f5-33be-41aa-80f5-78f4abd97481"
+      ],
+          "pattern": "^(.*)$"
+        },
+        "data_simulacao": {
+          "$id": "#/properties/data/properties/data_simulacao",
+          "type": "string",
+          "title": "The Data_simulacao Schema",
+          "default": "",
+          "examples": [
+            "2019-08-10"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "hora_simulacao": {
+          "$id": "#/properties/data/properties/hora_simulacao",
+          "type": "string",
+          "title": "The Hora_simulacao Schema",
+          "default": "",
+          "examples": [
+            "23:59:59"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "valor_simulado": {
+          "$id": "#/properties/data/properties/valor_simulado",
+          "type": "number",
+          "title": "The Valor_simulado Schema",
+          "default": 0.0,
+          "examples": [
+            1200.99
+          ]
+        },
+        "id_tipo_valor_simulado": {
+          "$id": "#/properties/data/properties/id_tipo_valor_simulado",
+          "type": "integer",
+          "title": "The Id_tipo_valor_simulado Schema",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "data_primeiro_vencimento": {
+          "$id": "#/properties/data/properties/data_primeiro_vencimento",
+          "type": "string",
+          "title": "The Data_primeiro_vencimento Schema",
+          "default": "",
+          "examples": [
+            "2019-08-10"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "data_ultimo_vencimento": {
+          "$id": "#/properties/data/properties/data_ultimo_vencimento",
+          "type": "string",
+          "title": "The Data_ultimo_vencimento Schema",
+          "default": "",
+          "examples": [
+            "2020-08-10"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "dia_vencimento": {
+          "$id": "#/properties/data/properties/dia_vencimento",
+          "type": "integer",
+          "title": "The Dia_vencimento Schema",
+          "default": 0,
+          "examples": [
+            10
+          ]
+        },
+        "percentual_encargos_atraso": {
+          "$id": "#/properties/data/properties/percentual_encargos_atraso",
+          "type": "number",
+          "title": "The Percentual_encargos_atraso Schema",
+          "default": 0.0,
+          "examples": [
+            2.99
+          ]
+        },
+        "percentual_multa_atraso": {
+          "$id": "#/properties/data/properties/percentual_multa_atraso",
+          "type": "number",
+          "title": "The Percentual_multa_atraso Schema",
+          "default": 0.0,
+          "examples": [
+            2.99
+          ]
+        },
+        "percentual_cet_mensal": {
+          "$id": "#/properties/data/properties/percentual_cet_mensal",
+          "type": "number",
+          "title": "The Percentual_cet_mensal Schema",
+          "default": 0.0,
+          "examples": [
+            2.99
+          ]
+        },
+        "percentual_cet_anual": {
+          "$id": "#/properties/data/properties/percentual_cet_anual",
+          "type": "number",
+          "title": "The Percentual_cet_anual Schema",
+          "default": 0.0,
+          "examples": [
+            30.99
+          ]
+        },
+        "planos_parcelamento": {
+          "$id": "#/properties/data/properties/planos_parcelamento",
+          "type": "array",
+          "title": "The Planos_parcelamento Schema",
+          "items": {
+            "$id": "#/properties/data/properties/planos_parcelamento/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "id_plano_parcelamento",
+              "quantidade_parcelas",
+              "valor_parcela",
+              "percentual_taxa_juros_mensal",
+              "percentual_taxa_juros_anual",
+              "valor_financiado"
+            ],
+            "properties": {
+              "id_plano_parcelamento": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/id_plano_parcelamento",
+                "type": "string",
+                "title": "The Id_plano_parcelamento Schema",
+                "default": "",
+                "examples": [
+                  "232382e6-0573-495f-b69e-4ad24ebb46af"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "quantidade_parcelas": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/quantidade_parcelas",
+                "type": "integer",
+                "title": "The Quantidade_parcelas Schema",
+                "default": 0,
+                "examples": [
+                  10
+                ]
+              },
+              "valor_parcela": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/valor_parcela",
+                "type": "number",
+                "title": "The Valor_parcela Schema",
+                "default": 0.0,
+                "examples": [
+                  120.99
+                ]
+              },
+              "percentual_taxa_juros_mensal": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/percentual_taxa_juros_mensal",
+                "type": "number",
+                "title": "The Percentual_taxa_juros_mensal Schema",
+                "default": 0.0,
+                "examples": [
+                  2.39
+                ]
+              },
+              "percentual_taxa_juros_anual": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/percentual_taxa_juros_anual",
+                "type": "number",
+                "title": "The Percentual_taxa_juros_anual Schema",
+                "default": 0.0,
+                "examples": [
+                  27.69
+                ]
+              },
+              "valor_financiado": {
+                "$id": "#/properties/data/properties/planos_parcelamento/items/properties/valor_financiado",
+                "type": "number",
+                "title": "The Valor_financiado Schema",
+                "default": 0.0,
+                "examples": [
+                  1250.99
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
